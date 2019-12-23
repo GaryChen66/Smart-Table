@@ -1,3 +1,5 @@
+//Search module
+
 ng.module('smart-table')
   .directive('stSearch', ['stConfig', '$timeout','$parse', function (stConfig, $timeout, $parse) {
     return {
