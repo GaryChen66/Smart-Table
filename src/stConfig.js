@@ -1,3 +1,4 @@
+//Config settings
 ng.module('smart-table')
   .constant('stConfig', {
     pagination: {
