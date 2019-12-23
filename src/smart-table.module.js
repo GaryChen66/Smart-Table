@@ -1,3 +1,5 @@
+//Load main Angular modules
+
 ng.module('smart-table', []).run(['$templateCache', function ($templateCache) {
     $templateCache.put('template/smart-table/pagination.html',
         '<nav ng-if="numPages && pages.length >= 2"><ul class="pagination">' +
