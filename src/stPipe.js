@@ -1,3 +1,4 @@
+//Load modules on pipe
 ng.module('smart-table')
   .directive('stPipe', ['stConfig', '$timeout', function (config, $timeout) {
     return {
