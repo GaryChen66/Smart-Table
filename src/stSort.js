@@ -1,3 +1,4 @@
+//Load modules.
 ng.module('smart-table')
   .directive('stSort', ['stConfig', '$parse', '$timeout', function (stConfig, $parse, $timeout) {
     return {
