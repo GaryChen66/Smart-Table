@@ -62,6 +62,7 @@ ng.module('smart-table')
           }
         }
 
+        //Event Click
         element.bind('click', function sortClick () {
           if (predicate) {
             scope.$apply(sort);
