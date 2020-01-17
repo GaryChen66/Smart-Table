@@ -1,3 +1,4 @@
+//Load Module
 ng.module('smart-table')
   .directive('stSelectRow', ['stConfig', function (stConfig) {
     return {
@@ -14,6 +15,7 @@ ng.module('smart-table')
           });
         });
 
+        //Select Event
         scope.$watch('row.isSelected', function (newValue) {
           if (newValue === true) {
             element.addClass(stConfig.select.selectedClass);
