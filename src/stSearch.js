@@ -11,6 +11,7 @@ ng.module('smart-table')
         var event = attr.stInputEvent || stConfig.search.inputEvent;
         var trimSearch = attr.trimSearch || stConfig.search.trimSearch;
 
+        //Search event
         attr.$observe('stSearch', function (newValue, oldValue) {
           var input = element[0].value;
           if (newValue !== oldValue && input) {
@@ -36,7 +37,7 @@ ng.module('smart-table')
           if (promise !== null) {
             $timeout.cancel(promise);
           }
-
+          //Set delay
           promise = $timeout(function () {
             var input = evt.target.value;
             input = ng.isString(input) && trimSearch ? input.trim() : input;
