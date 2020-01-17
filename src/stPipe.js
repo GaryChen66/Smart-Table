@@ -12,6 +12,7 @@ ng.module('smart-table')
 
           var pipePromise = null;
 
+          //Conform ng function
           if (ng.isFunction(scope.stPipe)) {
             ctrl.preventPipeOnWatch();
             ctrl.pipe = function () {
