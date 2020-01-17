@@ -1,4 +1,5 @@
 //Config settings
+//Set Pagination, Search, Select, Sort, Pipe
 ng.module('smart-table')
   .constant('stConfig', {
     pagination: {
