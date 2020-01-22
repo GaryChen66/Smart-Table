@@ -1,4 +1,4 @@
-//Load modules...
+//Load modules
 ng.module('smart-table').controller('stTableController', [
   '$scope',
   '$parse',
